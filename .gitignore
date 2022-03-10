@@ -1,0 +1,8 @@
+/target/
+.classpath
+.project
+app-info
+chromedriver.exe
+msedgedriver.exe
+geckodriver.exe
+.settings
