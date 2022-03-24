@@ -3,13 +3,13 @@ package com.automationpractice.core;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WebDriverFactory {
 
@@ -39,6 +39,26 @@ public class WebDriverFactory {
     public static void navigateToTheUrl(String url){
         driver.get(url);
         log.info("Browser navigated to the url: " + url);
+    }
+    
+    public void SwitchNextTab() {
+    	WebDriverWait wait = new WebDriverWait(driver,20);
+        wait.until(ExpectedConditions.numberOfWindowsToBe(2));
+    	Set<String> handles = driver.getWindowHandles();
+		Iterator<String> it = handles.iterator();
+		String ParentWindow = it.next();
+		String ChildWindow = it.next();
+		driver.switchTo().window(ChildWindow);
+		log.info("Switched on new tab");
+    }
+    public void SwitchOriginalTab() {
+    	Set<String> handles = driver.getWindowHandles();
+    	Iterator<String> it = handles.iterator();
+		String ParentWindow = it.next();
+		String ChildWindow = it.next();
+		driver.switchTo().window(ParentWindow);
+		log.info("Switched to MainPage");
+    	
     }
 
     public static void quitDriver(){

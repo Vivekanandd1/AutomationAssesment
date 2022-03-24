@@ -1,3 +1,4 @@
+
 package com.automationpractice.runners;
 
 import org.junit.runner.RunWith;
@@ -9,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = "classpath:Features",
 		glue = "com.automationpractice.STEPDEFS",
-		tags ="",
+		tags ="@urlLogoVisibilty",
 		plugin= {
 				"pretty",
 				"html:target/Reports/htmlrepo.html",

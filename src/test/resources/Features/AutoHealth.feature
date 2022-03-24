@@ -1,3 +1,4 @@
+
 @ui @HealthCheck @AutomationPractice
 Feature: E-commerce Web Application Health Check
 
@@ -7,27 +8,31 @@ Background: Navigation to the URL
 @1 @UrlValidation
 Scenario: User opened browser and navigate to home page url and validate the home page url with user given url
 #And  User navigated to home page url
-When  User validated Application url
-Then  Compared with given url
+Then User should be redirected to "http://automationpractice.com/index.php"
 
 
 @2 @urlLogoVisibilty
 Scenario: User opened browser and navigate to home page url and validated Application logo visibility and Height and Width
 #And User navigated to home page url
 When User validated visibility of Application logo
-Then User validated Height and Width of Application logo
+Then User validated Height is 91 and Width is 350 of Application logo
 
 @3 @ProductCategory
-Scenario: User opened browser and navigate to home page url and validated main product category
+Scenario Outline: User opened browser and navigate to home page url and validated main product categories and count
 #And User navigated to home page url
 When user validated main product count
-Then user fetched all main product text 
+Then user validated main product category should be "<ProductCategory>"
+Examples:
+| ProductCategory |
+| WOMEN           |
+| DRESSES         |
+| T-SHIRTS        |
 
 @4 @SearchFunctionality
 Scenario: User opened browser and navigate to home page url and validated Search page functionality
 #And User navigated to home page url
 When user entered text in searchbox "T-shirt"
-Then user validated autosuggestion text
+Then autosuggestion text should contains "T-shirt"
 
 @5 @SocialMediaHandle
 Scenario: User opened browser and navigate to home page url and validated Social Media handle
