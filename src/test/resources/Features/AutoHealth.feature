@@ -15,7 +15,7 @@ Then User should be redirected to "http://automationpractice.com/index.php"
 Scenario: User opened browser and navigate to home page url and validated Application logo visibility and Height and Width
 #And User navigated to home page url
 When User validated visibility of Application logo
-Then User validated Height is 91 and Width is 350 of Application logo
+Then User validated Height is 99 and Width is 357 of Application logo
 
 @3 @ProductCategory
 Scenario Outline: User opened browser and navigate to home page url and validated main product categories and count
@@ -31,8 +31,8 @@ Examples:
 @4 @SearchFunctionality
 Scenario: User opened browser and navigate to home page url and validated Search page functionality
 #And User navigated to home page url
-When user entered text in searchbox "T-shirt"
-Then autosuggestion text should contains "T-shirt"
+When user entered text in searchbox "Faded"
+Then autosuggestion text should contains "Faded"
 
 @5 @SocialMediaHandle
 Scenario: User opened browser and navigate to home page url and validated Social Media handle
@@ -41,6 +41,10 @@ When User clicked on twitter logo
 Then user validated new tab conatains "seleniumfrmwrk"
 And user validated account name is "Selenium Framework"
 
+@6 @Shopping 
+Scenario: User opend a browser and naviagated to homepage and purchased a item 
+When User clicked on item
+Then User proceeded to checkout
 
 
 

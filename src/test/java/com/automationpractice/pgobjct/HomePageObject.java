@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import io.cucumber.java.Scenario;
 
@@ -30,6 +31,10 @@ public class HomePageObject {
 	private By TwitterBTN = By.cssSelector("li.twitter");
 //	public int ActualWidth = 350, ActualHieght = 99;
 	private Scenario scn;
+	private By product = By.xpath("(//a[@title='Printed Summer Dress'])[3]");
+	private By cart = By.id("add_to_cart");
+	private By select = By.id("group_1");
+	private By checkout = By.xpath("//span[contains(text(),'Proceed to checkout')]");
 
 	public HomePageObject(WebDriver driver, Scenario scn) {
 		this.driver = driver;
@@ -109,7 +114,22 @@ public class HomePageObject {
 		TwitterBtn.click();
 		log.info("User clicked on Twitter button");
 		scn.log("User clicked on Twitter button");
-
+	}
+	
+	public void productselection() {
+		driver.findElement(product).click();
+		WebElement ss = driver.findElement(select);
+		Select s = new Select(ss);
+		s.selectByValue("2");
+		driver.findElement(cart).click();	
+		log.info("User selected product from webapp");
+		scn.log("User selected product from webapp");
+	}
+	
+	public void ProductCheckout() {
+		driver.findElement(checkout);
+		log.info("User checked out for product");
+		scn.log("User checked out for product");
 	}
 
 }

@@ -99,6 +99,14 @@ public class STEPDEFS {
 	public void user_validated_account_name_is(String AccountHandle) {
 		twitterPageObject.AccountHandleValidation(AccountHandle);
 	}
+	@When("User clicked on item")
+	public void user_clicked_on_item() {
+	    homePageObject.productselection();
+	}
+	@Then("User proceeded to checkout")
+	public void user_proceeded_to_checkout() {
+	    homePageObject.ProductCheckout();
+	}
 }
 
 
