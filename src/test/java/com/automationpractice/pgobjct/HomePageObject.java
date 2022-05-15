@@ -31,7 +31,7 @@ public class HomePageObject {
 	private By TwitterBTN = By.cssSelector("li.twitter");
 //	public int ActualWidth = 350, ActualHieght = 99;
 	private Scenario scn;
-	private By product = By.xpath("(//a[@title='Printed Summer Dress'])[3]");
+	private By product = By.xpath("(//a[@title='Printed Summer Dress'])[5]");
 	private By cart = By.id("add_to_cart");
 	private By select = By.id("group_1");
 	private By checkout = By.xpath("//span[contains(text(),'Proceed to checkout')]");
