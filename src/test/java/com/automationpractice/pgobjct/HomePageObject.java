@@ -22,17 +22,14 @@ public class HomePageObject {
 	private By Logo = By.cssSelector("img[alt='My Store']");
 	private By WidthHeight = By.cssSelector("img[alt='My Store']");
 	private By MainProductList = By.xpath("//div[@id='block_top_menu']/ul/li");
-//	private By ProductCategory1 = By.xpath("//div[@id='block_top_menu']/ul/li[1]");
-//	private By ProductCategory2 = By.xpath("//div[@id='block_top_menu']/ul/li[2]");
-//	private By ProductCategory3 = By.xpath("//div[@id='block_top_menu']/ul/li[3]");
 	private By Textbox = By.id("search_query_top");
 	static int i = 0;
 	private By AutoSuggestion = By.cssSelector("div.ac_results");
 	private By TwitterBTN = By.cssSelector("li.twitter");
-//	public int ActualWidth = 350, ActualHieght = 99;
 	private Scenario scn;
-	private By product = By.xpath("(//a[@title='Printed Summer Dress'])[5]");
-	private By cart = By.id("add_to_cart");
+	private By product = By.cssSelector("div.left-block");
+	private By cart = By.xpath("//button[@class='exclusive']");
+	private By frame = By.xpath("//iframe[@name='fancybox-frame1653212591496']");
 	private By select = By.id("group_1");
 	private By checkout = By.xpath("//span[contains(text(),'Proceed to checkout')]");
 
@@ -117,10 +114,17 @@ public class HomePageObject {
 	}
 	
 	public void productselection() {
-		driver.findElement(product).click();
-		WebElement ss = driver.findElement(select);
-		Select s = new Select(ss);
-		s.selectByValue("2");
+		List<WebElement>props = driver.findElements(product);
+		for(int i=0;i<props.size();i++) {
+			if(i==4) {
+				driver.findElement(product).click();
+			}
+		}
+		
+		driver.switchTo().frame(0);
+//		WebElement ss = driver.findElement(select);
+//		Select s = new Select(ss);
+//		s.selectByValue("2");
 		driver.findElement(cart).click();	
 		log.info("User selected product from webapp");
 		scn.log("User selected product from webapp");
