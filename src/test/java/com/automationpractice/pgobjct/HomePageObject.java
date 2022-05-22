@@ -10,6 +10,8 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -27,7 +29,7 @@ public class HomePageObject {
 	private By AutoSuggestion = By.cssSelector("div.ac_results");
 	private By TwitterBTN = By.cssSelector("li.twitter");
 	private Scenario scn;
-	private By product = By.cssSelector("div.left-block");
+	private By product = By.xpath("//a[@class='product-name']");
 	private By cart = By.xpath("//button[@class='exclusive']");
 	private By frame = By.xpath("//iframe[@name='fancybox-frame1653212591496']");
 	private By select = By.id("group_1");
@@ -113,15 +115,19 @@ public class HomePageObject {
 		scn.log("User clicked on Twitter button");
 	}
 	
-	public void productselection() {
+	public void productselection() throws InterruptedException {
 		List<WebElement>props = driver.findElements(product);
 		for(int i=0;i<props.size();i++) {
 			if(i==4) {
 				driver.findElement(product).click();
 			}
 		}
+		Thread.sleep(3000);
+//		WebElement dc = driver.findElement(By.xpath("(//div/div/a[@title='Printed Summer Dress'])[3]"));
+//		Actions act = new Actions(driver);
+//		act.moveToElement(dc, 295, 187);
 		
-		driver.switchTo().frame(0);
+//		driver.switchTo().frame(0);
 //		WebElement ss = driver.findElement(select);
 //		Select s = new Select(ss);
 //		s.selectByValue("2");
