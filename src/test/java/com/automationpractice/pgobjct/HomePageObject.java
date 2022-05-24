@@ -33,7 +33,7 @@ public class HomePageObject {
 	private By cart = By.xpath("//button[@class='exclusive']");
 	private By frame = By.xpath("//iframe[@name='fancybox-frame1653212591496']");
 	private By select = By.id("group_1");
-	private By checkout = By.xpath("//span[contains(text(),'Proceed to checkout')]");
+	private By checkout = By.xpath("//a[@title='Proceed to checkout']");
 
 	public HomePageObject(WebDriver driver, Scenario scn) {
 		this.driver = driver;

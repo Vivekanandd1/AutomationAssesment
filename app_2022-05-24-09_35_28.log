@@ -1,0 +1,5 @@
+2022-May-24 09:35:31 AM [main] INFO  com.automationpractice.core.WebDriverFactory - Chrome Browser invoked
+2022-May-24 09:35:31 AM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver maximized and implicit time out set to 40 seconds
+2022-May-24 09:35:31 AM [main] INFO  com.automationpractice.STEPDEFS.STEPDEFS - Browser invoked.
+2022-May-24 09:35:33 AM [main] INFO  com.automationpractice.core.WebDriverFactory - Browser navigated to the url: http://automationpractice.com
+2022-May-24 09:35:37 AM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver closed
