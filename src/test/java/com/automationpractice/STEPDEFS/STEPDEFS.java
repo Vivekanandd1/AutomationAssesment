@@ -100,7 +100,7 @@ public class STEPDEFS {
 		twitterPageObject.AccountHandleValidation(AccountHandle);
 	}
 	@When("User clicked on item")
-	public void user_clicked_on_item() {
+	public void user_clicked_on_item() throws InterruptedException {
 	    homePageObject.productselection();
 	}
 	@Then("User proceeded to checkout")

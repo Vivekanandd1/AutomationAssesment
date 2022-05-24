@@ -15,7 +15,7 @@ Then User should be redirected to "http://automationpractice.com/index.php"
 Scenario: User opened browser and navigate to home page url and validated Application logo visibility and Height and Width
 #And User navigated to home page url
 When User validated visibility of Application logo
-Then User validated Height is 99 and Width is 357 of Application logo
+Then User validated Height is 99 and Width is 350 of Application logo
 
 @3 @ProductCategory
 Scenario Outline: User opened browser and navigate to home page url and validated main product categories and count
