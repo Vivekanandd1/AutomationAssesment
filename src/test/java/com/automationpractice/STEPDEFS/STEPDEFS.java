@@ -21,7 +21,7 @@ public class STEPDEFS {
 
 	private static final Logger log = LogManager.getLogger(STEPDEFS.class);
 	WebDriver driver;
-	String url = "http://automationpractice.com";
+	String url = "http://automationpractice.pl/";
 	Scenario scn;
 	HomePageObject homePageObject;
 	TwitterPageObject twitterPageObject;

@@ -8,7 +8,7 @@ Background: Navigation to the URL
 @1 @UrlValidation
 Scenario: User opened browser and navigate to home page url and validate the home page url with user given url
 #And  User navigated to home page url
-Then User should be redirected to "http://automationpractice.com/index.php"
+Then User should be redirected to "http://automationpractice.pl/index.php"
 
 
 @2 @urlLogoVisibilty
@@ -38,8 +38,8 @@ Then autosuggestion text should contains "Faded"
 Scenario: User opened browser and navigate to home page url and validated Social Media handle
 #And User navigated to home page url
 When User clicked on twitter logo
-Then user validated new tab conatains "seleniumfrmwrk"
-And user validated account name is "Selenium Framework"
+Then user validated new tab conatains "prestashop"
+And user validated account name is "PrestaShop"
 
 @6 @Shopping 
 Scenario: User opend a browser and naviagated to homepage and purchased a item 

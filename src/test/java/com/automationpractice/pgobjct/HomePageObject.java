@@ -20,7 +20,7 @@ import io.cucumber.java.Scenario;
 public class HomePageObject {
 	private static final Logger log = LogManager.getLogger(HomePageObject.class);
 	private WebDriver driver;
-	public String ActualUrl = "http://automationpractice.com";
+	public String ActualUrl = "http://automationpractice.pl/index.php";
 	private By Logo = By.cssSelector("img[alt='My Store']");
 	private By WidthHeight = By.cssSelector("img[alt='My Store']");
 	private By MainProductList = By.xpath("//div[@id='block_top_menu']/ul/li");

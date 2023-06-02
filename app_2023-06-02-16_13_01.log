@@ -1,0 +1,46 @@
+2023-Jun-02 16:13:57 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Chrome Browser invoked
+2023-Jun-02 16:13:57 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver maximized and implicit time out set to 40 seconds
+2023-Jun-02 16:13:57 PM [main] INFO  com.automationpractice.STEPDEFS.STEPDEFS - Browser invoked.
+2023-Jun-02 16:14:04 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Browser navigated to the url: http://automationpractice.pl/
+2023-Jun-02 16:14:05 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver closed
+2023-Jun-02 16:14:07 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Chrome Browser invoked
+2023-Jun-02 16:14:07 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver maximized and implicit time out set to 40 seconds
+2023-Jun-02 16:14:07 PM [main] INFO  com.automationpractice.STEPDEFS.STEPDEFS - Browser invoked.
+2023-Jun-02 16:14:15 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Browser navigated to the url: http://automationpractice.pl/
+2023-Jun-02 16:14:15 PM [main] INFO  com.automationpractice.pgobjct.HomePageObject - logo is visible in top left corner
+2023-Jun-02 16:14:15 PM [main] INFO  com.automationpractice.pgobjct.HomePageObject - Height is - 99 and Width is - 350
+2023-Jun-02 16:14:16 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver closed
+2023-Jun-02 16:14:17 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Chrome Browser invoked
+2023-Jun-02 16:14:18 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver maximized and implicit time out set to 40 seconds
+2023-Jun-02 16:14:18 PM [main] INFO  com.automationpractice.STEPDEFS.STEPDEFS - Browser invoked.
+2023-Jun-02 16:14:25 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Browser navigated to the url: http://automationpractice.pl/
+2023-Jun-02 16:14:26 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver closed
+2023-Jun-02 16:14:28 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Chrome Browser invoked
+2023-Jun-02 16:14:28 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver maximized and implicit time out set to 40 seconds
+2023-Jun-02 16:14:28 PM [main] INFO  com.automationpractice.STEPDEFS.STEPDEFS - Browser invoked.
+2023-Jun-02 16:14:36 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Browser navigated to the url: http://automationpractice.pl/
+2023-Jun-02 16:14:37 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver closed
+2023-Jun-02 16:14:38 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Chrome Browser invoked
+2023-Jun-02 16:14:38 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver maximized and implicit time out set to 40 seconds
+2023-Jun-02 16:14:38 PM [main] INFO  com.automationpractice.STEPDEFS.STEPDEFS - Browser invoked.
+2023-Jun-02 16:14:46 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Browser navigated to the url: http://automationpractice.pl/
+2023-Jun-02 16:14:46 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver closed
+2023-Jun-02 16:14:48 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Chrome Browser invoked
+2023-Jun-02 16:14:48 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver maximized and implicit time out set to 40 seconds
+2023-Jun-02 16:14:48 PM [main] INFO  com.automationpractice.STEPDEFS.STEPDEFS - Browser invoked.
+2023-Jun-02 16:14:55 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Browser navigated to the url: http://automationpractice.pl/
+2023-Jun-02 16:14:55 PM [main] INFO  com.automationpractice.pgobjct.HomePageObject - user searched for T-shirt
+2023-Jun-02 16:14:56 PM [main] INFO  com.automationpractice.pgobjct.HomePageObject - the Auotsuggestiontext T-shirts > Faded Short Sleeve T-shirts Conatains Faded
+2023-Jun-02 16:14:56 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver closed
+2023-Jun-02 16:14:58 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Chrome Browser invoked
+2023-Jun-02 16:14:58 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver maximized and implicit time out set to 40 seconds
+2023-Jun-02 16:14:58 PM [main] INFO  com.automationpractice.STEPDEFS.STEPDEFS - Browser invoked.
+2023-Jun-02 16:15:05 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Browser navigated to the url: http://automationpractice.pl/
+2023-Jun-02 16:15:06 PM [main] INFO  com.automationpractice.pgobjct.HomePageObject - User clicked on Twitter button
+2023-Jun-02 16:15:06 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Switched on new tab
+2023-Jun-02 16:15:10 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver closed
+2023-Jun-02 16:15:12 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Chrome Browser invoked
+2023-Jun-02 16:15:12 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver maximized and implicit time out set to 40 seconds
+2023-Jun-02 16:15:12 PM [main] INFO  com.automationpractice.STEPDEFS.STEPDEFS - Browser invoked.
+2023-Jun-02 16:15:19 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Browser navigated to the url: http://automationpractice.pl/
+2023-Jun-02 16:16:00 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver closed

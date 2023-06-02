@@ -11,6 +11,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class WebDriverFactory {
 
 	private static final Logger log = LogManager.getLogger(WebDriverFactory.class);
@@ -18,10 +20,12 @@ public class WebDriverFactory {
     public static WebDriver getWebDriverForBrowser(String browser) throws Exception {
         switch(browser.toLowerCase()){
             case "chrome":
+            	WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
                 log.info("Chrome Browser invoked");
                 break;
             case "firefox":
+            	WebDriverManager.firefoxdriver().setup();
                 driver = new FirefoxDriver();
                 log.info("Firefox Browser invoked");
                 break;

@@ -22,7 +22,7 @@ public class TwitterPageObject {
 	private WebDriver driver;
 	private Scenario scn;
 	private By AcountName = By.xpath("(//span[contains(text(),'Selenium Framework')])[2]");
-	private  String Actual  = "Selenium Framework";
+	private  String Actual  = "PrestaShop";
 	WebDriverFactory webDriverFactory = new WebDriverFactory();
 	
 	public TwitterPageObject(WebDriver driver,Scenario scn){
