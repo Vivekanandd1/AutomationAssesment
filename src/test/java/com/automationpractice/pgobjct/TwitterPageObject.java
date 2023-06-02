@@ -21,7 +21,7 @@ public class TwitterPageObject {
 	private static final Logger log = LogManager.getLogger(TwitterPageObject.class);
 	private WebDriver driver;
 	private Scenario scn;
-	private By AcountName = By.xpath("(//span[contains(text(),'Selenium Framework')])[2]");
+	private By AcountName = By.xpath("(//span[contains(text(),'PrestaShop')])[2]");
 	private  String Actual  = "PrestaShop";
 	WebDriverFactory webDriverFactory = new WebDriverFactory();
 	

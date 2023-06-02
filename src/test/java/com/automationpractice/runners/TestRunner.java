@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = "classpath:Features",
 		glue = "com.automationpractice.STEPDEFS",
-		tags ="@ProductCategory",
+		tags ="@SocialMediaHandle",
 		plugin= {
 				"pretty",
 				"html:target/Reports/htmlrepo.html",
