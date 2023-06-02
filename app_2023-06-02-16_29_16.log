@@ -1,0 +1,21 @@
+2023-Jun-02 16:29:19 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Chrome Browser invoked
+2023-Jun-02 16:29:19 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver maximized and implicit time out set to 40 seconds
+2023-Jun-02 16:29:19 PM [main] INFO  com.automationpractice.STEPDEFS.STEPDEFS - Browser invoked.
+2023-Jun-02 16:29:27 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Browser navigated to the url: http://automationpractice.pl/
+2023-Jun-02 16:29:27 PM [main] INFO  com.automationpractice.pgobjct.HomePageObject - Main Product list count is -4
+2023-Jun-02 16:29:27 PM [main] INFO  com.automationpractice.pgobjct.HomePageObject -  product are WOMEN And WOMEN
+2023-Jun-02 16:29:28 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver closed
+2023-Jun-02 16:29:29 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Chrome Browser invoked
+2023-Jun-02 16:29:29 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver maximized and implicit time out set to 40 seconds
+2023-Jun-02 16:29:29 PM [main] INFO  com.automationpractice.STEPDEFS.STEPDEFS - Browser invoked.
+2023-Jun-02 16:29:36 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Browser navigated to the url: http://automationpractice.pl/
+2023-Jun-02 16:29:36 PM [main] INFO  com.automationpractice.pgobjct.HomePageObject - Main Product list count is -4
+2023-Jun-02 16:29:36 PM [main] INFO  com.automationpractice.pgobjct.HomePageObject -  product are DRESSES And DRESSES
+2023-Jun-02 16:29:37 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver closed
+2023-Jun-02 16:29:39 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Chrome Browser invoked
+2023-Jun-02 16:29:39 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver maximized and implicit time out set to 40 seconds
+2023-Jun-02 16:29:39 PM [main] INFO  com.automationpractice.STEPDEFS.STEPDEFS - Browser invoked.
+2023-Jun-02 16:29:46 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Browser navigated to the url: http://automationpractice.pl/
+2023-Jun-02 16:29:46 PM [main] INFO  com.automationpractice.pgobjct.HomePageObject - Main Product list count is -4
+2023-Jun-02 16:29:46 PM [main] INFO  com.automationpractice.pgobjct.HomePageObject -  product are T-SHIRTS And T-SHIRTS
+2023-Jun-02 16:29:47 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver closed

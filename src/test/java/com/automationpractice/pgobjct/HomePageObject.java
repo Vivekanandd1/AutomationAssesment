@@ -70,7 +70,7 @@ public class HomePageObject {
 
 	public void Mainproductcount() {
 		List<WebElement> MainProduct = driver.findElements(MainProductList);
-		Assert.assertEquals(3, MainProduct.size());
+		Assert.assertEquals(4, MainProduct.size());
 		log.info("Main Product list count is -" + MainProduct.size());
 		scn.log("main product count is " + MainProduct.size());
 
