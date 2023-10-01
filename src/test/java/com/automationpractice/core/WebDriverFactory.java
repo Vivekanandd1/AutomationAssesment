@@ -1,5 +1,6 @@
 package com.automationpractice.core;
 
+import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -11,7 +12,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class WebDriverFactory {
 
@@ -20,12 +20,12 @@ public class WebDriverFactory {
     public static WebDriver getWebDriverForBrowser(String browser) throws Exception {
         switch(browser.toLowerCase()){
             case "chrome":
-            	WebDriverManager.chromedriver().setup();
+//            	WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
                 log.info("Chrome Browser invoked");
                 break;
             case "firefox":
-            	WebDriverManager.firefoxdriver().setup();
+//            	WebDriverManager.firefoxdriver().setup();
                 driver = new FirefoxDriver();
                 log.info("Firefox Browser invoked");
                 break;
@@ -35,7 +35,7 @@ public class WebDriverFactory {
         }
 
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
         log.info("Driver maximized and implicit time out set to 40 seconds");
         return driver;
     }
@@ -46,7 +46,7 @@ public class WebDriverFactory {
     }
     
     public void SwitchNextTab() {
-    	WebDriverWait wait = new WebDriverWait(driver,20);
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         wait.until(ExpectedConditions.numberOfWindowsToBe(2));
     	Set<String> handles = driver.getWindowHandles();
 		Iterator<String> it = handles.iterator();

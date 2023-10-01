@@ -1,5 +1,6 @@
 package com.automationpractice.pgobjct;
 
+import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -41,7 +42,7 @@ public class TwitterPageObject {
 	}
 	
     public void AccountHandleValidation(String AccountHandle) {
-    	WebDriverWait webDriverWait = new WebDriverWait(driver,20);
+    	WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(20));
         webDriverWait.until(ExpectedConditions.presenceOfElementLocated(AcountName));
     	String HandleName = driver.findElement(AcountName).getText();
 		Assert.assertEquals(HandleName, AccountHandle);

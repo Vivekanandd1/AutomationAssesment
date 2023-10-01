@@ -1,5 +1,6 @@
 package com.automationpractice.pgobjct;
 
+import java.time.Duration;
 import java.util.List;
 
 import javax.swing.text.html.HTMLDocument.Iterator;
@@ -102,7 +103,7 @@ public class HomePageObject {
 	}
 
 	public void AutoSuggestion(String productname) {
-		WebDriverWait webDriverWait = new WebDriverWait(driver, 20);
+		WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		webDriverWait.until(ExpectedConditions.presenceOfElementLocated(AutoSuggestion));
 		String AutoText = driver.findElement(AutoSuggestion).getText();
 		Assert.assertEquals(AutoText.contains(productname), true);

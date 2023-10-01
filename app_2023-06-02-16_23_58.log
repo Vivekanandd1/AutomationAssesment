@@ -1,6 +1,0 @@
-2023-Jun-02 16:24:02 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Chrome Browser invoked
-2023-Jun-02 16:24:02 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver maximized and implicit time out set to 40 seconds
-2023-Jun-02 16:24:02 PM [main] INFO  com.automationpractice.STEPDEFS.STEPDEFS - Browser invoked.
-2023-Jun-02 16:24:11 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Browser navigated to the url: http://automationpractice.pl/
-2023-Jun-02 16:24:11 PM [main] INFO  com.automationpractice.pgobjct.HomePageObject - Both the given and present url are same http://automationpractice.pl/index.php http://automationpractice.pl/index.php
-2023-Jun-02 16:24:12 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver closed

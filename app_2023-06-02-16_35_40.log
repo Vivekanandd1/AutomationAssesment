@@ -1,9 +1,0 @@
-2023-Jun-02 16:35:44 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Chrome Browser invoked
-2023-Jun-02 16:35:44 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver maximized and implicit time out set to 40 seconds
-2023-Jun-02 16:35:44 PM [main] INFO  com.automationpractice.STEPDEFS.STEPDEFS - Browser invoked.
-2023-Jun-02 16:35:51 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Browser navigated to the url: http://automationpractice.pl/
-2023-Jun-02 16:35:51 PM [main] INFO  com.automationpractice.pgobjct.HomePageObject - User clicked on Twitter button
-2023-Jun-02 16:35:51 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Switched on new tab
-2023-Jun-02 16:35:55 PM [main] INFO  com.automationpractice.pgobjct.TwitterPageObject - in current page url |https://twitter.com/prestashop | word present is prestashop
-2023-Jun-02 16:35:59 PM [main] INFO  com.automationpractice.pgobjct.TwitterPageObject - Twitter handle is PrestaShop
-2023-Jun-02 16:36:00 PM [main] INFO  com.automationpractice.core.WebDriverFactory - Driver closed

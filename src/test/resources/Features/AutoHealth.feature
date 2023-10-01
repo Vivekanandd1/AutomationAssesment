@@ -8,7 +8,7 @@ Background: Navigation to the URL
 @1 @UrlValidation
 Scenario: User opened browser and navigate to home page url and validate the home page url with user given url
 #And  User navigated to home page url
-Then User should be redirected to "http://automationpractice.pl/index.php"
+Then User should be redirected to "http://www.automationpractice.pl/index.php?"
 
 
 @2 @urlLogoVisibilty
