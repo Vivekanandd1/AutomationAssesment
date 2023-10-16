@@ -22,8 +22,8 @@ public class HomePageObject {
 	private static final Logger log = LogManager.getLogger(HomePageObject.class);
 	private WebDriver driver;
 	public String ActualUrl = "http://automationpractice.pl/index.php";
-	private By Logo = By.cssSelector("img[alt='My Store']");
-	private By WidthHeight = By.cssSelector("img[alt='My Store']");
+	private By Logo = By.cssSelector("img[alt='My Shop']");
+	private By WidthHeight = By.cssSelector("img[alt='My Shop']");
 	private By MainProductList = By.xpath("//div[@id='block_top_menu']/ul/li");
 	private By Textbox = By.id("search_query_top");
 	static int i = 0;
