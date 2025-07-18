@@ -1,6 +1,5 @@
 
 package com.automationpractice.STEPDEFS;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
@@ -9,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 import com.automationpractice.core.WebDriverFactory;
 import com.automationpractice.pgobjct.HomePageObject;
 import com.automationpractice.pgobjct.TwitterPageObject;
-
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
