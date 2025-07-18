@@ -3,19 +3,16 @@ package com.automationpractice.pgobjct;
 import java.time.Duration;
 import java.util.List;
 
-import javax.swing.text.html.HTMLDocument.Iterator;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
 import io.cucumber.java.Scenario;
 
 public class HomePageObject {
@@ -119,12 +116,6 @@ public class HomePageObject {
 	}
 	
 	public void productselection() throws InterruptedException {
-//		List<WebElement>props = driver.findElements(product);
-//		for(int i=0;i<props.size();i++) {
-//			if(i==4) {
-//				driver.findElement(product).click();
-//			}
-//		}
 		driver.findElement(Dresses).click();
 		driver.findElement(product).click();
 	
